@@ -23,6 +23,7 @@ let movieDetails = document.getElementById(`movie-details`);
         
         if (!moviedata.Title) {
            alert("Movie not found");
+           movieDetails.style.display ="none";
         }
         else {
             let img = document.createElement(`img`);
