@@ -7,7 +7,7 @@ let movieDetails = document.getElementById(`movie-details`);
     function getData () {
         let movieNameInput = document.querySelector(`#movie-input`);
         let movieName = movieNameInput.value;
-        fetch(`http://www.omdbapi.com/?t=${movieName}&apikey=${apiKey}`)
+        fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=${apiKey}`)
         .then((res) => res.json())
         .then((res) => displayData(res))
         .catch(function (err) {
