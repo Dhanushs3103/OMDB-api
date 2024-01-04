@@ -16,12 +16,13 @@ let movieDetails = document.getElementById(`movie-details`);
 
         movieNameInput.value = "";
     }
+
+
     function displayData(moviedata) {
-        console.log(moviedata);
         movieImg.innerHTML = "";
         movieDetails.innerHTML = "";
         
-        if (!moviedata.Title) {
+        if (!moviedata.Title || moviedata.length === 0) {
            alert("Movie not found");
            movieDetails.style.display ="none";
         }
